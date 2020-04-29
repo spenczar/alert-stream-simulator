@@ -24,12 +24,6 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Run docker-compose up
-      run: docker-compose up -d
-
-    - name: Check that containers are up
-      run: docker ps -a
-
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
       with:
