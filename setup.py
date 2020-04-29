@@ -1,7 +1,7 @@
 from setuptools import setup
 
 install_requires = [
-    'avro-python3==1.9.2',
+    'avro-python3==1.9.2.1',
     'confluent_kafka',
 ]
 
