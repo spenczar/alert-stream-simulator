@@ -34,7 +34,7 @@ jobs:
 
     - name: debug - install avro-python3 separately
       run: |
-        pip install --verbose avro-python3
+        pip install --verbose avro-python3==1.8
 
     - name: Install rubin-alert-sim program
       run: pip --verbose install .
