@@ -37,7 +37,7 @@ jobs:
 
     - name: debug - Download avro-python3
       run: |
-        pip download avro-python3
+        pip download --verbose avro-python3
         md5sum avro-python3-1.9.2.1.tar.gz
         tar -xzvf avro-python3-*.tar.gz
         ls avro-python3-*/avro_python3.egg-info/*
