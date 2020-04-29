@@ -48,7 +48,7 @@ jobs:
       run: python -m pip install --upgrade pip
 
     - name: Install rubin-alert-sim program
-      run: pip install .
+      run: pip --verbose install .
 
     - name: Try sending a test alert file
       # TODO: Add verification that it was written correctly. For now, we just
